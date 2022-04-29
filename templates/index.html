@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Калькулятор</title>
+</head>
+<body>
+    <h3>Калькулятор</h3>
+    <hr>
+    <form method="post">
+        <p>Введите первое число</p>
+        <input type="text" name="num_1">
+        <p>Введите второе число </p>
+        <input type="text" name="num_2">
+        <p>Введите арифметическое действие между 1 и 2 числом (*,/,+,-)</p>
+        <input type="text" name="action">
+        <br>
+        <br>
+        <button type="submit">Посчитать</button>
+    </form>
+    <hr>
+    {% if status%}
+            <p style="color: red; font-size: 200%">Результат - {{result}}</p>
+
+        {% endif%}
+
+
+</body>
+</html>
+
